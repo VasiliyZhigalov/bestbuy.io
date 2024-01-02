@@ -10,6 +10,7 @@
 	<div class="container">
 		<div class="inner" id = "inner">
 			<script	>
+				let ref = window.location.search
 				inner1 = document.getElementById("inner");
 				var s = '[{"title" : "marketing"},{"title" : "sales"},{"title" : "marketing"},{"title" : "sales"}]';
 				obj =JSON.parse(s);
@@ -20,7 +21,7 @@
 					'<button class="btn" id="btn'+i+'">Add</button>'+
 				'</div>'
 					}
-				inner1.innerHTML = items
+				inner1.innerHTML = items +"<p>ref</p>
 			</script>
 		</div>
 	</div>
