@@ -12,14 +12,13 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
-				var s = decodeURIComponent(window.location.search.substring(1));
-				///obj =JSON.parse(JSON.stringify(s));
-				alert(typeof(s))
+				//var s = decodeURIComponent(window.location.search.substring(1));
+				//obj =JSON.parse(JSON.stringify(s));
+				//alert(typeof(s))
 				let items= ''
 				for (let i = 0; i < 3; i++) {
 					items=items+'<div class="item">' +
 					'<img src="1.jpg" alt	="" class="img">'+
-						//'obj[i]['title']'+
 					'<button class="btn" id="btn'+i+'">Add</button>'+
 				'</div>'
 					}
