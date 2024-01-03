@@ -12,8 +12,7 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
-				let params = new URLSearchParams(window.location.search)
-				alert(decodeURI(params))
+				alert(decodeURI(window.location.search))
 				var s = '[{"title" : "marketing"},{"title" : "sales"},{"title" : "marketing"},{"title" : "sales"}]';
 				obj =JSON.parse(s);
 				let items= ''
