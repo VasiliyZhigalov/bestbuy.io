@@ -12,9 +12,9 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
-				alert(decodeURIComponent(window.location.search.substring(1)))
-				var s = '[{"title" : "marketing"},{"title" : "sales"},{"title" : "marketing"},{"title" : "sales"}]';
+				var s = decodeURIComponent(window.location.search.substring(1));
 				obj =JSON.parse(s);
+				alert(obj)
 				let items= ''
 				for (let i = 0; i < 10; i++) {
 					items=items+'<div class="item">' +
