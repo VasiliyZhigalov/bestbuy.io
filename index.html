@@ -14,7 +14,8 @@
 				inner1 = document.getElementById("inner");
 				var s = decodeURIComponent(window.location.search.substring(1));
 				let params = new URLSearchParams(window.location.search)
-				alert(params)
+				
+				alert(params[0])
 
 				obj =JSON.parse(s);
 				//alert(obj.length)
