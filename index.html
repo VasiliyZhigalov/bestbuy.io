@@ -12,7 +12,7 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
-				alert(encodeURIComponent(window.location.href))
+				alert(decodeURIComponent(window.location.href))
 				var s = '[{"title" : "marketing"},{"title" : "sales"},{"title" : "marketing"},{"title" : "sales"}]';
 				obj =JSON.parse(s);
 				let items= ''
