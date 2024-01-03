@@ -13,7 +13,7 @@
 			<script	>
 				inner1 = document.getElementById("inner");
 				let params = new URLSearchParams(window.location.search)
-				alert(decodeURIComponent(params))
+				alert(decodeURI(params))
 				var s = '[{"title" : "marketing"},{"title" : "sales"},{"title" : "marketing"},{"title" : "sales"}]';
 				obj =JSON.parse(s);
 				let items= ''
