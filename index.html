@@ -12,8 +12,8 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
-				alert(window.location.search)
-				var s = window.location.search;
+				alert(window.location.search.substring(1))
+				var s = window.location.search.substring(1);
 				alert(typeof(s))
 				let params = new URLSearchParams(s)
 				alert(params.lenght)
