@@ -12,11 +12,10 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
+				alert(window.location.search)
 				var s = decodeURIComponent(window.location.search);
 				alert(typeof(s))
-
 				let params = new URLSearchParams(s)
-				
 				alert(params.lenght)
 
 				obj =JSON.parse(s);
