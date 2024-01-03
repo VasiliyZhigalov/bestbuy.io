@@ -15,11 +15,8 @@
 				alert(window.location.search.substring(1))
 				var s = window.location.search.substring(1);
 				alert(typeof(s))
-				let params = new URLSearchParams(s)
-				alert(params.lenght)
-
 				obj =JSON.parse(s);
-				//alert(obj.length)
+				alert(obj.length)
 				let items= ''
 				for (let i = 0; i < 3; i++) {
 					items=items+'<div class="item">' +
