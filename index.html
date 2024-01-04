@@ -13,16 +13,17 @@
 			<script	>
 				inner1 = document.getElementById("inner");
 				var s = decodeURIComponent(window.location.search).substring(1);
-				alert("Тест10")
+				alert("Тест11")
 				obj =JSON.parse(s);
-				alert(obj[0].title)
-				alert(obj[0]["market"])
+				//alert(obj[0].title)
+				//alert(obj[0]["market"])
 				let items= ''
 				for (let i = 0; i < obj.length; i++) {
-					items=items+'<div class="item" href = obj.ref >' +
-					//'<img src=obj.img alt="img" class="img">'+
-					//'<h3 class = "title">'+ obj[title] +'<h3>'+
-					//'<h3 class = "market">'+ obj.market +'<h3>'+
+					items=items+'<div class="item" href = obj[i].ref >' +
+					'<img src=obj[i].img alt="img" class="img">'+
+					'<h3 class = "title">'+ obj[i].title +'<h3>'+
+					'<h3 class = "market">'+ obj[i].market +'<h3>'+
+					'<h3 class = "price">'+ obj[i].price +'<h3>'+
 					'</div>'
 					}
 				inner1.innerHTML = items
