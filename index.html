@@ -19,10 +19,10 @@
 				let items= ''
 				for (let i = 0; i < obj.length; i++) {
 					items=items+'<div class="item" href = obj[i].ref >' +
-					'<img src=obj[i].img alt="img" class="img">'+
-					'<p class = "title">'+ obj[i].title +'<p>'+
-					'<p class = "market">'+ obj[i].market +'<p>'+
-					'<p class = "price">'+ obj[i].price +'<p>'+
+					'<img src=obj[i].img alt="img" class="img">'+obj[i].img+'</img>'+
+					'<p class = "title">'+ obj[i].title +'</p>'+
+					'<p class = "market">'+ obj[i].market +'</p>'+
+					'<p class = "price">'+ obj[i].price +'</p>'+
 					'</div>'
 					}
 				inner1.innerHTML = items
