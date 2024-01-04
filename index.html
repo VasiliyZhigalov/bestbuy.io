@@ -12,8 +12,8 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
-				alert("Тест2"+ decodeURIComponent(window.location.search))
-				var s = window.location.search.substring(1);
+				var s = decodeURIComponent(window.location.search).substring(1);
+				alert("Тест2"+ s)
 				alert(typeof(s))
 				obj =JSON.parse(s);
 				alert(obj.length)
