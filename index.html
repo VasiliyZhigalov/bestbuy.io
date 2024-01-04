@@ -20,11 +20,11 @@
 				for (let i = 0; i < obj.length; i++) {
 					items=items +
 					'<div class="item" />' +
-						'<img width= "50" height="50" src='+ obj[i].img +'/>'+
+						'<img width= "100" src='+ obj[i].img +'/>'+
 						//'<a href='+ obj[i].img +'> рисунок </a>'+
-						'<a class = "title"'  + 'href='+ obj[i].href + '>'+ obj[i].title +'</a>'+
-						'<a class = "market">'+ obj[i].market +'</a>'+
-						'<a class = "price">'+ obj[i].price +'</a>'+
+						'<p class = "title"'  + 'href='+ obj[i].href.substring(1,30) + '>'+ obj[i].title +'</p>'+
+						'<p class = "market">'+ obj[i].market +'</p>'+
+						'<p class = "price">'+ obj[i].price +'</p>'+
 					'</div>'
 					}
 				inner1.innerHTML = items
