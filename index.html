@@ -7,13 +7,12 @@
 	<title>Document</title>
 </head>
 <body>
-	<h>Привет</h>
 	<div class="container">
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
 				var s = decodeURIComponent(window.location.search).substring(1);
-				alert("Тест11")
+				alert("Тест12")
 				obj =JSON.parse(s);
 				//alert(obj[0].title)
 				//alert(obj[0]["market"])
@@ -21,9 +20,9 @@
 				for (let i = 0; i < obj.length; i++) {
 					items=items+'<div class="item" href = obj[i].ref >' +
 					'<img src=obj[i].img alt="img" class="img">'+
-					'<h3 class = "title">'+ obj[i].title +'<h3>'+
-					'<h3 class = "market">'+ obj[i].market +'<h3>'+
-					'<h3 class = "price">'+ obj[i].price +'<h3>'+
+					'<p class = "title">'+ obj[i].title +'<p>'+
+					'<p class = "market">'+ obj[i].market +'<p>'+
+					'<p class = "price">'+ obj[i].price +'<p>'+
 					'</div>'
 					}
 				inner1.innerHTML = items
