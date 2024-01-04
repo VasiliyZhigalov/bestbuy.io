@@ -12,14 +12,14 @@
 			<script	>
 				inner1 = document.getElementById("inner");
 				var s = decodeURIComponent(window.location.search).substring(1);
-				alert("Тест13")
+				alert("Тест14")
 				obj =JSON.parse(s);
-				//alert(obj[0].title)
+				alert(obj[0].img)
 				//alert(obj[0]["market"])
 				let items= ''
 				for (let i = 0; i < obj.length; i++) {
 					items=items+'<div class="item" href = obj[i].ref >' +
-					'<img src=obj[i].img alt="img" class="img">'+
+					'<img src=obj[i].img >'+
 					'<p class = "title">'+ obj[i].title +'</p>'+
 					'<p class = "market">'+ obj[i].market +'</p>'+
 					'<p class = "price">'+ obj[i].price +'</p>'+
