@@ -19,7 +19,7 @@ body {
 .img {
 	width: 30%;
   	height: 30%;
-  	object-fit: contain;}
+}
 
 .item {
 	text-align: center;
