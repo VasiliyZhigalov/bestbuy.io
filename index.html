@@ -12,9 +12,9 @@
 			<script	>
 				inner1 = document.getElementById("inner");
 				var s = decodeURIComponent(window.location.search).substring(1);
-				alert("Тест2")
+				alert("Тест3")
 				obj =JSON.parse(s);
-				//alert(obj[0].img)
+				alert(obj[0].href)
 				//alert(obj[0]["market"])
 				let items= ''
 				for (let i = 0; i < obj.length; i++) {
@@ -22,7 +22,7 @@
 					'<div class="item" >' +
 						'<img width= "80" src='+ obj[i].img +'/>'+
 						//'<a href='+ obj[i].img +'> рисунок </a>'+
-						'<p style="font-size: 12px;"' + 'href='+ obj[i].href + '>'+ obj[i].title.substring(0,20) +'</p>'+
+						'<p style="font-size: 12px;" href='+ obj[i].href + '>'+ obj[i].title.substring(0,20) +'</p>'+
 						'<p style="font-size: 12px;" class = "market">'+ obj[i].market +'</p>'+
 						'<p style="font-size: 12px;" class = "price">'+ obj[i].price +'</p>'+
 					'</div>'
