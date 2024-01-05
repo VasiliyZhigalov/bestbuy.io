@@ -13,9 +13,9 @@
 				inner1 = document.getElementById("inner");
 				let tg = window.Telegram.WebApp;
 				var s = decodeURIComponent(window.location.search).substring(1);
-				alert("Тест3")
+				alert("Тест4")
 				obj =JSON.parse(s);
-				alert(obj[0].href)
+				//alert(obj[0].href)
 				//alert(obj[0]["market"])
 				let items= ''
 				for (let i = 0; i < obj.length; i++) {
@@ -28,10 +28,10 @@
 						'<p style="font-size: 12px;" class = "price">'+ obj[i].price +'</p>'+
 						'<button class="btn" id="btn'+ i +'">Заказать</button>'+
 					'</div>'
-					let btn = document.getElementById("btn" + i);
-					btn.addEventListener("click", function(){
-						tg.openLink(obj[i].href)
-					}
+					//let btn = document.getElementById("btn" + i);
+					//btn.addEventListener("click", function(){
+					//	tg.openLink(obj[i].href)
+					//}
 					}
 				inner1.innerHTML = items
 			</script>
