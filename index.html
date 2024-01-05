@@ -11,6 +11,7 @@
 		<div class="inner" id = "inner">
 			<script	>
 				inner1 = document.getElementById("inner");
+				let tg = window.Telegram.WebApp;
 				var s = decodeURIComponent(window.location.search).substring(1);
 				alert("Тест3")
 				obj =JSON.parse(s);
@@ -25,7 +26,12 @@
 						'<p style="font-size: 12px;" href='+ obj[i].href + '>'+ obj[i].title.substring(0,20) +'</p>'+
 						'<p style="font-size: 12px;" class = "market">'+ obj[i].market +'</p>'+
 						'<p style="font-size: 12px;" class = "price">'+ obj[i].price +'</p>'+
+						'<button class="btn" id="btn'+ i +'">Заказать</button>'+
 					'</div>'
+					let btn = document.getElementById("btn" + i);
+					btn.addEventListener("click", function(){
+						tg.openLink(obj[i].href)
+					}
 					}
 				inner1.innerHTML = items
 			</script>
