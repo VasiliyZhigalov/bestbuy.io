@@ -28,12 +28,16 @@
 						'<p style="font-size: 12px;" class = "price">'+ obj[i].price +'</p>'+
 						'<button class="btn" id="btn'+ i +'">Заказать</button>'+
 					'</div>'
+					// Создание кнопки
+                                         var button = document.createElement("button");
+                                         button.textContent = "Нажми меня";
 					//let btn = document.getElementById("btn" + i);
 					//btn.addEventListener("click", function(){
 					//	tg.openLink(obj[i].href)
 					//}
 					}
-				inner1.innerHTML = items
+				inner1.innerHTML = items;
+				inner1.appendChild(button);
 			</script>
 		</div>
 	</div>
