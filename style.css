@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
+	line-height: 13px;
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
 }
@@ -23,7 +24,7 @@ body {
 
 .item {
 	text-align: center;
-	border: 4px double black;
+	border: 2px grey;
 }
 
 .btn {	
